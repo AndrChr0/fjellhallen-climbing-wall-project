@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn to climb | Fjellhallen Climbing Wall</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header tabindex="0">
+      <h1 id="header__title">Fjellhallen Climbing Wall</h1>
+    </header>
+    <a class="skip-to-content-link" href="#main">
+      Skip to main content
+    </a>
+    <nav>
+      <ul role="menubar">
+        <li role="menuitem">
+          <a href="index.html"><span>Home</span></a>
+        </li>
+        <li role="menuitem">
+          <a href="facilities.html" tabindex="0">Our Facilities</a>
+        </li>
+        <li role="menuitem">
+          <a href="learn-to-climb.html" tabindex="0">Learn To Climb</a>
+        </li>
+        <li role="menuitem" aria-haspopup="true">
+          <a href="#" tabindex="0" onfocus="openDropdown()">More &#x21E9;</a>
+          <ul role="menu" class="dropdown_list" id="menu__dropdown">
+            <li role="menuitem">
+              <a href="community.html" tabindex="0">Our Community</a>
+            </li>
+            <li role="menuitem">
+              <a href="contact.html" tabindex="0" onblur="closeDropdown()"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main id="main">
+      <section class="section__column">
+        <h2 tabindex="0">Learn to climb at Fjellhallen</h2>
+        <p tabindex="0">
+          We offer comprehensive certification courses throughout the year,
+          providing new climbers with the knowledge and skills needed to
+          navigate the vertical terrain confidently. Whether you're a beginner
+          eager to grasp the fundamentals or someone looking to refine their
+          techniques, our expert instructors are committed to guiding you every
+          step of the way. Our courses cover essential aspects such as safety
+          protocols, proper equipment usage, and climbing techniques suitable
+          for various levels. Feel free to <a href="contact.html">contact us</a> about when the next course
+          will be held.
+        </p>
+        <img
+          src="./assets/images/learn-to-climb.png"
+          alt="Two girls besides a climbing wall. One smiling to the camera. While the other is belaying a climber."
+          tabindex="0"
+        />
+      </section>
+      <section class="section__column">
+        <h2 tabindex="0">Tips and tricks before taking your climbing test</h2>
+        <ul>
+          <li tabindex="0">Don't hesitate to clarify any doubts or ask questions about the test format, rules, or any concerns you may have.</li>
+          <li tabindex="0">
+            Ensure you have a solid understanding of safety procedures, including proper harness and helmet usage, knot tying, and communication signals.
+          </li>
+          <li tabindex="0">
+            Know the specific requirements and criteria for the climbing test.
+          </li>
+          <li tabindex="0">
+            Develop a positive and focused mindset. Stay calm and composed during the test.
+          </li>
+        </ul>
+        <video class="video__figure-eight" controls>
+          <source
+            src="./assets/images/figure-eight-knot-video.mp4"
+            type="video/mp4"
+          />
+          <track
+            kind="subtitles"
+            label="English"
+            src="assets/figure-eight-transcription.vtt"
+            srclang="en"
+            default
+          />
+        </video>
+      </section>
+    </main>
+    <footer>
+        <a href="contact.html">Contact us</a>
+        <p tabindex="0" role="note">
+          Made by Andreas Christiansen IDG2012 - NTNU Gjøvik
+        </p>
+        <div class="map__container">
+          <address tabindex="0">Heimdals gate 2, 2821 Gjøvik</address>
+          <button id="open-map" aria-haspopup="true">Open Map &#x2714;</button>
+          <div class="map__pop-up" id="mapPopUp">
+            <span tabindex="0" role="heading" id="focus">Fjellhallen Location</span>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.8805699209502!2d10.682100977632976!3d60.79326859299115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641da165754c853%3A0xaaddd101dd9aa3a3!2sGj%C3%B8vik%20Olympiske%20Fjellhall!5e0!3m2!1sno!2sno!4v1701009967310!5m2!1sno!2sno"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Google Map of Fjellhallen Location"
+              aria-label="Google Map of Fjellhallen Location"
+            ></iframe>
+            <button id="close-map">Close Map &#x2718;</button>
+          </div>
+        
+        </div>
+       
+      </footer>
+  </body>
+</html>

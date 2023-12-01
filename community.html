@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Community | Fjellhallen Climbing Wall</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header tabindex="0">
+      <h1 id="header__title">Fjellhallen Climbing Wall</h1>
+    </header>
+    <a class="skip-to-content-link" href="#main"> Skip to main content </a>
+    <nav>
+      <ul role="menubar">
+        <li role="menuitem">
+          <a href="index.html"><span>Home</span></a>
+        </li>
+        <li role="menuitem">
+          <a href="facilities.html" tabindex="0">Our Facilities</a>
+        </li>
+        <li role="menuitem">
+          <a href="learn-to-climb.html" tabindex="0">Learn To Climb</a>
+        </li>
+        <li role="menuitem" aria-haspopup="true">
+          <a href="#" tabindex="0" onfocus="openDropdown()">More &#x21E9;</a>
+          <ul role="menu" class="dropdown_list" id="menu__dropdown">
+            <li role="menuitem">
+              <a href="community.html" tabindex="0">Our Community</a>
+            </li>
+            <li role="menuitem">
+              <a href="contact.html" tabindex="0" onblur="closeDropdown()"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main id="main">
+      <section class="section__column">
+        <h2 tabindex="0">Our Community</h2>
+        <p tabindex="0">
+          Our climbing community at Fjellhallen is a mad up by individuals who
+          share a common passion for adventure and vertical exploration. Within
+          our walls, climbers of all skill levels come together to make
+          connections, exchange tips, and celebrate the shared joy of rock
+          climbing. It's a welcoming space where beginners find encouragement
+          from seasoned climbers, and where experienced climbers discover new
+          challenges to conquer.
+        </p>
+        <img
+          src="./assets/images/community-img.png"
+          alt="A large crowd of people standing around the bouldering wall at fjellhallen."
+          tabindex="0"
+        />
+        <h3 tabindex="0">Statements from a climbing member</h3>
+        <video class="audio" controls>
+          <source src="./assets/audio-interview.mp3" type="audio/mp3" />
+        </video>
+        <div class="transcription">
+          <h4>Transcription</h4>
+          <p><i>[Hollow background noise]</i></p>
+          <p>
+            "Sebastian, what do you think about the climbing wall at
+            Fjellhallen?"
+          </p>
+          <p>
+            "The climbing wall is really nice and now that we've set some new
+            routes it's really interesting again."
+          </p>
+        </div>
+      </section>
+
+      <h2 tabindex="0">Climbing groups at fjellhallen</h2>
+      <article class="container__flex--row">
+        <div class="container__left logo">
+          <img
+            tabindex="0"
+            src="./assets/images/gkk-logo.png"
+            alt="The logo of Gjøvik climbing club with bold white letters on a black foreground."
+          />
+        </div>
+        <div class="container__right">
+          <h3 tabindex="0">Gjøvik Climbing Club</h3>
+          <p tabindex="0">
+            Gjøvik climbing club was established in 2003 by keen climbers in
+            Gjøvik who wanted a better organization of climbing activities. The
+            number of members and active climbers has multiplied since the club
+            was started. Gjøvik Klatreklubb offers courses both indoors and
+            outdoors for beginners and technique courses for beginners and
+            established climbers.
+          </p>
+        </div>
+      </article>
+      <article class="container__flex--row">
+        <div class="container__left logo">
+          <img
+            tabindex="0"
+            src="./assets/images/grad-9-logo.png"
+            alt="The student climbing club logo with bold white letters and an illustration of a mountain."
+          />
+        </div>
+        <div class="container__right">
+          <h3 tabindex="0">Grad-9 student climbing club</h3>
+          <p tabindex="0">
+            "Climbing-group grade 9"(Klatregruppa grad 9) is a student group at
+            NTNU Gjøvik, which gets together to climb every Tuesday & Thursday.
+            We host belaying/lead courses during the semesters. If you want to
+            sign up, talk to one of the board members and we will start planing
+            a course. We have climbing equipment, which can be lended for free
+            if you are a member of SiT-Gjøvik/NTNUi-Gjøvik.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <a href="contact.html">Contact us</a>
+      <p tabindex="0" role="note">
+        Made by Andreas Christiansen IDG2012 - NTNU Gjøvik
+      </p>
+      <div class="map__container">
+        <address tabindex="0">Heimdals gate 2, 2821 Gjøvik</address>
+        <button id="open-map" aria-haspopup="true">Open Map &#x2714;</button>
+        <div class="map__pop-up" id="mapPopUp">
+          <span tabindex="0" role="heading" id="focus"
+            >Fjellhallen Location</span
+          >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.8805699209502!2d10.682100977632976!3d60.79326859299115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641da165754c853%3A0xaaddd101dd9aa3a3!2sGj%C3%B8vik%20Olympiske%20Fjellhall!5e0!3m2!1sno!2sno!4v1701009967310!5m2!1sno!2sno"
+            width="300"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Map of Fjellhallen Location"
+            aria-label="Google Map of Fjellhallen Location"
+          ></iframe>
+          <button id="close-map">Close Map &#x2718;</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,442 @@
+/* General styles */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Atkinson Hyperlegible", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+li {
+  font-size: 1.7em;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+a {
+  text-decoration: none;
+  color: #36b9ff;
+  font-weight: 700;
+}
+
+/* Body */
+
+body {
+  background-color: #161a1d;
+  color: white;
+  line-height: 1.3;
+}
+
+.skip-to-content-link {
+  background-color: rgb(230, 207, 0);
+  color: black;
+  padding: 0.15em;
+  position: absolute;
+  transform: translateY(-26vh);
+}
+
+.skip-to-content-link:focus {
+  transition-duration: 555ms;
+  transform: translateY(-18vh);
+}
+
+/* Header */
+header {
+  max-width: 100vw;
+  background: url(./assets/images/header-img.png);
+  background-size: cover;
+  height: 20vh;
+}
+#header__title {
+  text-indent: -5000px;
+  position: absolute;
+}
+/* Nav */
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 4vw;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1em;
+  font-size: 1em;
+}
+
+nav li:hover,
+nav a:hover {
+  background-color: rgb(48, 48, 48);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.dropdown_list {
+  position: absolute;
+  display: none;
+  margin-top: 0.7em;
+  gap: 1vh;
+  padding: 0.5em;
+  background-color: #161a1d;
+  border: solid 1px white;
+}
+
+.dropdown_list li {
+  display: block;
+  padding: 0;
+}
+
+.dropdown_list li a {
+  font-size: 1.2em;
+}
+
+/* Main */
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container__flex--row {
+  display: flex;
+  gap: 1vw;
+  margin: 1.5vh 0 0 2vw;
+}
+
+.container__flex--row p {
+  width: 40vw;
+}
+
+.container__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__left img {
+  max-width: 100%;
+}
+
+.img__hero {
+  width: 52vw;
+}
+
+.card__container {
+  gap: 3vw;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.card img {
+  width: 22vw;
+}
+
+.card p {
+  width: 20vw;
+}
+
+.pricing__info p {
+  width: 25vw;
+}
+
+.section__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 60vw;
+  gap: 1.5vh;
+  margin-bottom: 5vh;
+}
+.section__column p,
+.section__column img {
+  margin-left: 2vw;
+}
+
+.section__column .video__figure-eight {
+  width: 60vw;
+}
+
+.logo img {
+  width: 30vw;
+}
+
+.audio {
+  height: 5vh;
+  width: 30vw;
+  margin-left: 2vw;
+}
+
+.transcription {
+  width: 40vw;
+  border: solid white 1px;
+  padding: 1vh;
+  border-radius: 10px;
+  margin-left: 2vw;
+}
+
+.transcription p:nth-of-type(n + 2) {
+  margin-top: 1.4vh;
+}
+
+/* footer */
+footer {
+  margin-top: 5vh;
+  border-top: solid white 1px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer a {
+  color: white;
+}
+
+/* pop up */
+
+.map__pop-up {
+  background-color: #287bba;
+  background-color: #414141;
+  border: solid white 1px;
+  border-radius: 10px;
+  position: absolute;
+  padding: 2em;
+  display: none;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1vh;
+}
+
+.map__pop-up span {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+#open-map {
+  background-color: #00599c;
+  color: white;
+  font-weight: 700;
+  padding: 0.4em;
+}
+
+#open-map:hover,
+form button:hover {
+  background-color: #003c6a;
+}
+
+#close-map {
+  background-color: darkred;
+  color: white;
+  font-weight: 700;
+  padding: 0.4em;
+}
+
+#close-map:hover {
+  background-color: rgb(59, 0, 0);
+}
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin-left: 5vw;
+  border: solid 1px white;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  margin-bottom: 1vh;
+}
+
+label:nth-of-type(-n + 3)::after {
+  content: "*";
+  color: red;
+}
+
+form button {
+  width: 10vw;
+  background-color: #00599c;
+  font-weight: 700;
+  color: white;
+}
+
+.error__msg {
+  display: none;
+  color: red;
+}
+
+/* table */
+
+th {
+  background-color: rgb(52, 52, 52);
+}
+
+td {
+  width: 20ch;
+  word-break: break-word;
+}
+
+td,
+tr,
+th {
+  border: solid rgb(255, 255, 255) 1px;
+  padding: 0.4em;
+}
+
+.hidden {
+  text-indent: -5000px;
+}
+
+/* Spacing */
+
+.container__flex--row {
+  margin-bottom: 8vh;
+}
+
+/* ------------------------------ Media queries - mobile -------------- */
+
+@media (max-width: 1100px) {
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+  main {
+    width: 95%;
+  }
+  .card p {
+    font-size: 1.2em;
+    width: 25vw;
+  }
+  li {
+    font-size: 1.2em;
+  }
+
+  .logo img {
+    width: 40vw;
+  }
+
+  .transcription {
+    width: 60vw;
+  }
+  form {
+    width: 50vw;
+  }
+  form button {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    height: 10vh;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 0;
+    padding: 0;
+  }
+
+  .container__flex--row {
+    flex-direction: column;
+  }
+
+  .img__hero {
+    width: 90vw;
+  }
+
+  .container__flex--row p,
+  .section__column p,
+  .section__column li {
+    width: 80vw;
+  }
+
+  .section__column .video__figure-eight,
+  .section__column img {
+    width: 90vw;
+  }
+
+  .card__container img,
+  .pricing__info p {
+    width: 75vw;
+  }
+  .card__container p {
+    width: 85vw;
+  }
+
+  .audio {
+    width: 80vw;
+  }
+  .transcription {
+    width: 80vw;
+  }
+
+  .transcription p {
+    width: 75vw;
+  }
+  .transcription p:first-of-type {
+    margin-bottom: 3vh;
+  }
+
+  .map__pop-up {
+    left: 5vw;
+    padding: 1em;
+    margin-top: 3vh;
+    max-width: 100%;
+  }
+
+  iframe {
+    width: 90%;
+  }
+
+  .logo img {
+    width: 80vw;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 15vh;
+  }
+
+  footer p {
+    font-size: 0.7em;
+  }
+
+  form {
+    width: 80vw;
+  }
+}

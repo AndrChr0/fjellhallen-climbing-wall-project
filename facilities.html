@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Facilities | Fjellhallen Climbing Wall</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header tabindex="0">
+      <h1 id="header__title">Fjellhallen Climbing Wall</h1>
+    </header>
+    <a class="skip-to-content-link" href="#main">
+      Skip to main content
+    </a>
+    <nav>
+      <ul role="menubar">
+        <li role="menuitem">
+          <a href="index.html"><span>Home</span></a>
+        </li>
+        <li role="menuitem">
+          <a href="facilities.html" tabindex="0">Our Facilities</a>
+        </li>
+        <li role="menuitem">
+          <a href="learn-to-climb.html" tabindex="0">Learn To Climb</a>
+        </li>
+        <li role="menuitem" aria-haspopup="true">
+          <a href="#" tabindex="0" onfocus="openDropdown()">More &#x21E9;</a>
+          <ul role="menu" class="dropdown_list" id="menu__dropdown">
+            <li role="menuitem">
+              <a href="community.html" tabindex="0">Our Community</a>
+            </li>
+            <li role="menuitem">
+              <a href="contact.html" tabindex="0" onblur="closeDropdown()"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main id="main">
+      <h2 tabindex="0">Our Climbing Walls</h2>
+      <article class="container__flex--row">
+        <div class="container__right">
+          <h3 tabindex="0">Classic Wall</h3>
+          <p tabindex="0">
+            Our “classic” wall, also known as the “main wall”, is a large
+            climbing wall that suits all experience levels. The grades range
+            from 5 to 8. On the far-right side of the wall there are two “auto
+            belay” systems so that you can climb with a rope without being
+            belayed by another person. The wall is 10 to 13 meters high and 25
+            meters wide, making it the biggest climbing wall in Gjøvik.
+          </p>
+        </div>
+
+        <div class="container__left">
+          <img
+            tabindex="0"
+            src="./assets/images/classic-wall.png"
+            alt="Two climbers rope climbing on the classic climbing wall in fjellhallen."
+          />
+        </div>
+      </article>
+      <article class="container__flex--row facilities__row">
+        <div class="container__right">
+          <h3 tabindex="0">Competition Wall</h3>
+          <p tabindex="0">
+            Our competition wall contains a steep overhang and cater to more
+            advanced climbers. Many regional cups are held at this very wall.
+            All routes on this wall are set by professional route-setters with
+            experience from national competitions and world cups. The wall is 15
+            meters high, and has about 20 routes with grades ranging from 6+ to
+            9. The wall is located between the bouldering wall an the classic
+            wall.
+          </p>
+        </div>
+
+        <div class="container__left">
+          <img
+            tabindex="0"
+            src="./assets/images/cometition-wall.png"
+            alt="The majestic competition wall in fjellhallen. The orange wall is covered with colourful holds."
+          />
+        </div>
+      </article>
+      <article class="container__flex--row">
+        <div class="container__right">
+          <h3 tabindex="0">Bouldering Wall</h3>
+          <p tabindex="0">
+            The bouldering wall is the most popular of all our walls. Bouldering
+            is about climbing short routes without a rope and falling on padding
+            instead of being kept safe by a rope. It does not require any course
+            certification to do bouldering. This is why it is popular for first
+            timers. The bouldering wall has grades from 4+ to 7a/7b.
+          </p>
+        </div>
+
+        <div class="container__left">
+          <img
+            tabindex="0"
+            src="./assets/images/bouldering-wall.png"
+            alt="Three climbers standing beneath the bouldering wall, looking at the colourful holds on the wall."
+          />
+        </div>
+      </article>
+      <h2 tabindex="0">Disability Access</h2>
+      <article class="container__flex--row">
+        <div class="container__right">
+          <h3 tabindex="0">Accessing our facilities by wheelchair?</h3>
+          <p tabindex="0">
+            For physically impaired climbers, there are special entrances and an
+            elevator to get to the climbing walls. You will see the elevator to
+            your right-hand side when entering Fjellhallen. Our instructors are
+            available to assist you with anything you need, be it belaying or
+            specialized climbing gear.
+          </p>
+        </div>
+
+        <div class="container__left" tabindex="0">
+          <figure>
+            <img
+              src="./assets/images/access-image.png"
+              alt="A disability sign hanging besides a wheelchair access point."
+            />
+            <figcaption>
+              Climbing should be enjoyed by everyone. Fjellhallen offers easy access anyone with, or without a physical disability.
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <a href="contact.html">Contact us</a>
+      <p tabindex="0" role="note">
+        Made by Andreas Christiansen IDG2012 - NTNU Gjøvik
+      </p>
+      <div class="map__container">
+        <address tabindex="0">Heimdals gate 2, 2821 Gjøvik</address>
+        <button id="open-map" aria-haspopup="true">Open Map &#x2714;</button>
+        <div class="map__pop-up" id="mapPopUp">
+          <span tabindex="0" role="heading" id="focus">Fjellhallen Location</span>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.8805699209502!2d10.682100977632976!3d60.79326859299115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641da165754c853%3A0xaaddd101dd9aa3a3!2sGj%C3%B8vik%20Olympiske%20Fjellhall!5e0!3m2!1sno!2sno!4v1701009967310!5m2!1sno!2sno"
+            width="300"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Map of Fjellhallen Location"
+            aria-label="Google Map of Fjellhallen Location"
+          ></iframe>
+          <button id="close-map">Close Map &#x2718;</button>
+        </div>
+      
+      </div>
+     
+    </footer>
+  </body>
+</html>
