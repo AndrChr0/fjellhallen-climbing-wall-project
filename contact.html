@@ -11,9 +11,7 @@
     <header tabindex="0">
       <h1 id="header__title">Fjellhallen Climbing Wall</h1>
     </header>
-    <a class="skip-to-content-link" href="#main">
-      Skip to main content
-    </a>
+    <a class="skip-to-content-link" href="#main"> Skip to main content </a>
     <nav>
       <ul role="menubar">
         <li role="menuitem">
@@ -41,19 +39,29 @@
       </ul>
     </nav>
     <main id="main">
+      <h2 tabindex="0">Contact Us</h2>
+
       <section class="section__column">
-        <h2 tabindex="0">Contact Us</h2>
-        <p tabindex="0">
-          We value your connection and enthusiasm for climbing! If you have any
-          questions, suggestions, or would simply like to reach out to the
-          Fjellhallen team, feel free to contact us. Our knowledgeable and
-          friendly staff are here to assist you with anything you may need, from
-          inquiries about membership and classes to details on upcoming events.
-          You can also reach us via the forms below. Your feedback is important
-          to us as we continually strive to enhance your climbing experience.
-        </p>
+        <h3 tabindex="0">Contact Info</h3>
+        <ul class="contact__list">
+          <li>
+            <a
+              href="mailto:gjovik-climbing@fjellhallen.com"
+              aria-label="Email: gjovik-climbing@fjellhallen.com"
+              >gjovik-climbing@fjellhallen.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+4761138200" aria-label="Phone: 61 13 82 00"
+              >61 13 82 00</a
+            >
+          </li>
+          <li tabindex="0" aria-label="Address: Heimdals gate 2, 2821 Gjøvik">
+            Heimdals gate 2, 2821 Gjøvik
+          </li>
+        </ul>
       </section>
- 
+
       <form action="#" method="post">
         <label for="email">Mail</label>
         <input
@@ -64,7 +72,7 @@
           required
         />
         <div class="error__msg" id="errorMsg" tabindex="0">
-          Please enter a valid email address
+          &#9888; Please enter a valid email address
         </div>
         <label for="fname">First Name</label>
         <input
@@ -86,35 +94,35 @@
         <label for="bio">Feel free to send us a message!</label>
         <textarea name="bio" id="bio" maxlength="250"> </textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit" aria-label="Submit Form">Submit</button>
       </form>
     </main>
     <footer>
-        <a href="contact.html">Contact us</a>
-        <p tabindex="0" role="note">
-          Made by Andreas Christiansen IDG2012 - NTNU Gjøvik
-        </p>
-        <div class="map__container">
-          <address tabindex="0">Heimdals gate 2, 2821 Gjøvik</address>
-          <button id="open-map" aria-haspopup="true">Open Map &#x2714;</button>
-          <div class="map__pop-up" id="mapPopUp">
-            <span tabindex="0" role="heading" id="focus">Fjellhallen Location</span>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.8805699209502!2d10.682100977632976!3d60.79326859299115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641da165754c853%3A0xaaddd101dd9aa3a3!2sGj%C3%B8vik%20Olympiske%20Fjellhall!5e0!3m2!1sno!2sno!4v1701009967310!5m2!1sno!2sno"
-              width="300"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Google Map of Fjellhallen Location"
-              aria-label="Google Map of Fjellhallen Location"
-            ></iframe>
-            <button id="close-map">Close Map &#x2718;</button>
-          </div>
-        
+      <a href="contact.html">Contact us</a>
+      <p tabindex="0" role="note">
+        Made by Andreas Christiansen IDG2012 - NTNU Gjøvik
+      </p>
+      <div class="map__container">
+        <address tabindex="0">Heimdals gate 2, 2821 Gjøvik</address>
+        <button id="open-map" aria-haspopup="true">Open Map &#x2714;</button>
+        <div class="map__pop-up" id="mapPopUp">
+          <span tabindex="0" role="heading" id="focus"
+            >Fjellhallen Location</span
+          >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.8805699209502!2d10.682100977632976!3d60.79326859299115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641da165754c853%3A0xaaddd101dd9aa3a3!2sGj%C3%B8vik%20Olympiske%20Fjellhall!5e0!3m2!1sno!2sno!4v1701009967310!5m2!1sno!2sno"
+            width="300"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Map of Fjellhallen Location"
+            aria-label="Google Map of Fjellhallen Location"
+          ></iframe>
+          <button id="close-map">Close Map &#x2718;</button>
         </div>
-       
-      </footer>
+      </div>
+    </footer>
   </body>
 </html>

@@ -9,6 +9,10 @@
   font-family: "Atkinson Hyperlegible", sans-serif, Arial, Helvetica, sans-serif;
 }
 
+*:focus {
+  outline: 2px solid white;
+}
+
 h2 {
   font-size: 3em;
 }
@@ -22,7 +26,8 @@ h4 {
 }
 
 li {
-  font-size: 1.7em;
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
 }
 
 p {
@@ -40,7 +45,10 @@ a {
 body {
   background-color: #161a1d;
   color: white;
-  line-height: 1.3;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
+  font-size: 18px;
 }
 
 .skip-to-content-link {
@@ -48,6 +56,7 @@ body {
   color: black;
   padding: 0.15em;
   position: absolute;
+  left: 1.5vw;
   transform: translateY(-26vh);
 }
 
@@ -117,7 +126,7 @@ nav li a {
 
 /* Main */
 main {
-  width: 80%;
+  width: 78%;
   margin: 0 auto;
 }
 
@@ -290,6 +299,11 @@ form button {
 .error__msg {
   display: none;
   color: red;
+}
+
+.contact__list a {
+  color: white;
+  font-weight: 100;
 }
 
 /* table */
