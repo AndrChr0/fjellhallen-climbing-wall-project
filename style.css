@@ -41,7 +41,6 @@ a {
 }
 
 /* Body */
-
 body {
   background-color: #161a1d;
   color: white;
@@ -76,8 +75,8 @@ header {
   text-indent: -5000px;
   position: absolute;
 }
-/* Nav */
 
+/* Nav */
 nav ul {
   display: flex;
   justify-content: flex-start;
@@ -229,7 +228,6 @@ footer a {
 }
 
 /* pop up */
-
 .map__pop-up {
   background-color: #287bba;
   background-color: #414141;
@@ -269,6 +267,7 @@ form button:hover {
 #close-map:hover {
   background-color: rgb(59, 0, 0);
 }
+
 /* Form */
 form {
   display: flex;
@@ -309,7 +308,6 @@ form button {
 }
 
 /* table */
-
 th {
   background-color: rgb(52, 52, 52);
 }
@@ -330,13 +328,11 @@ th {
   text-indent: -5000px;
 }
 
-/* Spacing */
-
 .container__flex--row {
   margin-bottom: 8vh;
 }
 
-/* ------------------------------ Media queries - mobile -------------- */
+/* ------------------------------ Media queries -------------- */
 
 @media (max-width: 1100px) {
   h2 {
