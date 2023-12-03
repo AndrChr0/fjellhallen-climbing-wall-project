@@ -10,7 +10,7 @@
 }
 
 *:focus {
-  outline: 2px solid white;
+  outline: 3px solid white;
 }
 
 h2 {
@@ -225,6 +225,7 @@ footer {
 
 footer a {
   color: white;
+  text-decoration: underline;
 }
 
 /* pop up */
@@ -273,7 +274,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 40vw;
-  margin-left: 5vw;
+  margin-left: 2vw;
   border: solid 1px white;
   padding: 1em;
   border-radius: 10px;
@@ -304,6 +305,7 @@ form button {
 .contact__list a {
   color: white;
   font-weight: 100;
+  text-decoration: underline;
 }
 
 /* table */
@@ -443,7 +445,7 @@ th {
 
   footer {
     flex-direction: column;
-    height: 15vh;
+    height: 20vh;
   }
 
   footer p {
@@ -451,6 +453,6 @@ th {
   }
 
   form {
-    width: 80vw;
+    width: 90vw;
   }
 }

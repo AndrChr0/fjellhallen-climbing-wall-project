@@ -56,14 +56,12 @@
               >61 13 82 00</a
             >
           </li>
-          <li tabindex="0" aria-label="Address: Heimdals gate 2, 2821 Gjøvik">
-            Heimdals gate 2, 2821 Gjøvik
-          </li>
+          <li tabindex="0">Heimdals gate 2, 2821 Gjøvik</li>
         </ul>
       </section>
 
       <form action="#" method="post">
-        <label for="email">Mail</label>
+        <label for="email">Email Address</label>
         <input
           type="email"
           name="email"
@@ -71,9 +69,10 @@
           id="email"
           required
         />
-        <div class="error__msg" id="errorMsg" tabindex="0">
+        <div class="error__msg" id="emailErrorMsg" tabindex="0">
           &#9888; Please enter a valid email address
         </div>
+
         <label for="fname">First Name</label>
         <input
           type="text"
@@ -82,6 +81,10 @@
           aria-required="true"
           required
         />
+        <div class="error__msg" id="fnameErrorMsg" tabindex="0">
+          &#9888; Please enter a valid first name
+        </div>
+
         <label for="lname">Last Name</label>
         <input
           type="text"
@@ -90,6 +93,9 @@
           aria-required="true"
           required
         />
+        <div class="error__msg" id="lnameErrorMsg" tabindex="0">
+          &#9888; Please enter a valid last name
+        </div>
 
         <label for="bio">Feel free to send us a message!</label>
         <textarea name="bio" id="bio" maxlength="250"> </textarea>
